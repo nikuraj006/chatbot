@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container page-form" ng-app="myApp"  ng-controller="myCtrl">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-xs-12">
+                <div class="card">
+                    <div class="card-body">
+                      <h3 class="card-title" align="center">Chat Messages</h3>
+                      <div class="col-lg-12 chat-box">
+                           <table id="chatData" class="table">
+                               <tr ng-show="hideTr">
+                                   <td>{{currentAction}}</td></tr>
+                                   <tr ng-show="hideTr"><td class="align-right">{{firstQuestion}}</td>
+                               </tr>
+                           </table>
+                       </div>
+                       <form id="chatting-form" ng-submit="myFunc()">
+                          <div class="form-group">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" id="clientData" ng-model="clientData">
+                            </div>
+                            <div>
+                                <button type="submit" class="btn"><span class="glyphicon glyphicon-forward"></span></button>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+

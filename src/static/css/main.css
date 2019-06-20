@@ -1,0 +1,21 @@
+#chatting-form {
+    margin-top: 10px;
+}
+
+.chat-box {
+    height: 250px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.page-form {
+    max-width: 480px;
+}
+
+.align-right {
+    text-align: right;
+}
+.forward :after{
+     content: ' \00BB';
+     font-size: 200px;
+}
